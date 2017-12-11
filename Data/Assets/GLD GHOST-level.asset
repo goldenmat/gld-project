@@ -1,0 +1,433 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0c2324a9ab1224ebe3edad393e3544, type: 3}
+  m_Name: GLD-level
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114708143094964356}
+  - {fileID: 114083779829630064}
+  - {fileID: 114416170421909208}
+  - {fileID: 114668509144089774}
+  - {fileID: 114577754520577902}
+  - {fileID: 114315605778953890}
+  - {fileID: 114039636394721668}
+  - {fileID: 114331131041970908}
+--- !u!114 &114015848336969534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Event
+  m_EditorClassIdentifier: 
+  body: {fileID: 114315605778953890}
+  side: 2
+  sidePosition: 67
+  sideOffset: 0
+  connections:
+  - {fileID: 114093513345357036}
+  - {fileID: 114647300614888456}
+  type: CardQuestType
+--- !u!114 &114039636394721668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d56e1b51556399469cfdd890bb0195e, type: 3}
+  m_Name: Item Quest Card
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: 40.200134
+    y: 224.60019
+    width: 400
+    height: 150
+  nodeKnobs:
+  - {fileID: 114550820155511960}
+  Inputs: []
+  Outputs: []
+  it: 14
+  asp: 12
+  text: 
+  gen: 0
+--- !u!114 &114083779829630064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b850b66f74b8ef47a4441b9f423299d, type: 3}
+  m_Name: Place Quest Card
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -229.19922
+    y: -272.99905
+    width: 400
+    height: 150
+  nodeKnobs:
+  - {fileID: 114839895551132086}
+  Inputs: []
+  Outputs: []
+  pl: 15
+  asp: 2
+  text: 
+  gen: 0
+--- !u!114 &114093513345357036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: EventCard
+  m_EditorClassIdentifier: 
+  body: {fileID: 114331131041970908}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114015848336969534}
+  type: CardQuestType
+--- !u!114 &114097483458712782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: PlaceCard
+  m_EditorClassIdentifier: 
+  body: {fileID: 114708143094964356}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114158798764618622}
+  type: CardQuestType
+--- !u!114 &114158798764618622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Place
+  m_EditorClassIdentifier: 
+  body: {fileID: 114315605778953890}
+  side: 2
+  sidePosition: 49
+  sideOffset: 0
+  connections:
+  - {fileID: 114839895551132086}
+  - {fileID: 114097483458712782}
+  type: CardQuestType
+--- !u!114 &114170526987836090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: MobCard
+  m_EditorClassIdentifier: 
+  body: {fileID: 114668509144089774}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114749435612732342}
+  type: CardQuestType
+--- !u!114 &114315605778953890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1220c5fe5777a644bd04a9e96c8e447, type: 3}
+  m_Name: Side Quest
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -436.39905
+    y: -48.999786
+    width: 400
+    height: 140
+  nodeKnobs:
+  - {fileID: 114158798764618622}
+  - {fileID: 114015848336969534}
+  - {fileID: 114922329014686480}
+  - {fileID: 114749435612732342}
+  Inputs: []
+  Outputs: []
+  characterName: Defeat Strax
+--- !u!114 &114331131041970908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2a56975a505ff4ea71c0b8f79e3a74, type: 3}
+  m_Name: Event Quest Card
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: 80.79993
+    y: 56.399918
+    width: 400
+    height: 150
+  nodeKnobs:
+  - {fileID: 114093513345357036}
+  Inputs: []
+  Outputs: []
+  ev: 5
+  asp: 2
+  text: 
+  gen: 0
+--- !u!114 &114416170421909208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1e01645191449498b67bdfdd3a702d, type: 3}
+  m_Name: Mob Quest Card
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -421.60022
+    y: 114.20007
+    width: 400
+    height: 150
+  nodeKnobs:
+  - {fileID: 114873948168804994}
+  Inputs: []
+  Outputs: []
+  mon: 1
+  asp: 16
+  text: 
+  gen: 0
+--- !u!114 &114550820155511960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: ItemCard
+  m_EditorClassIdentifier: 
+  body: {fileID: 114039636394721668}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114922329014686480}
+  type: CardQuestType
+--- !u!114 &114577754520577902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2a56975a505ff4ea71c0b8f79e3a74, type: 3}
+  m_Name: Event Quest Card
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: 82
+    y: -95
+    width: 400
+    height: 150
+  nodeKnobs:
+  - {fileID: 114647300614888456}
+  Inputs: []
+  Outputs: []
+  ev: 13
+  asp: 19
+  text: 
+  gen: 0
+--- !u!114 &114647300614888456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: EventCard
+  m_EditorClassIdentifier: 
+  body: {fileID: 114577754520577902}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114015848336969534}
+  type: CardQuestType
+--- !u!114 &114668509144089774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1e01645191449498b67bdfdd3a702d, type: 3}
+  m_Name: Mob Quest Card
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -420
+    y: 273
+    width: 400
+    height: 150
+  nodeKnobs:
+  - {fileID: 114170526987836090}
+  Inputs: []
+  Outputs: []
+  mon: 0
+  asp: 18
+  text: 
+  gen: 0
+--- !u!114 &114708143094964356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b850b66f74b8ef47a4441b9f423299d, type: 3}
+  m_Name: Place Quest Card
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -228.39935
+    y: -422.60046
+    width: 400
+    height: 150
+  nodeKnobs:
+  - {fileID: 114097483458712782}
+  Inputs: []
+  Outputs: []
+  pl: 5
+  asp: 19
+  text: 
+  gen: 0
+--- !u!114 &114715343078287248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ab6487237ff124ea4c2aa5de9ce3fb, type: 3}
+  m_Name: MainEditorState
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 11400000}
+  parentEditor: {fileID: 0}
+  drawing: 1
+  selectedNode: {fileID: 0}
+  panOffset: {x: 41.799942, y: 126.00006}
+  zoom: 1.2
+--- !u!114 &114749435612732342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Mob
+  m_EditorClassIdentifier: 
+  body: {fileID: 114315605778953890}
+  side: 2
+  sidePosition: 104
+  sideOffset: 0
+  connections:
+  - {fileID: 114873948168804994}
+  - {fileID: 114170526987836090}
+  type: CardQuestType
+--- !u!114 &114839895551132086
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: PlaceCard
+  m_EditorClassIdentifier: 
+  body: {fileID: 114083779829630064}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114158798764618622}
+  type: CardQuestType
+--- !u!114 &114873948168804994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: MobCard
+  m_EditorClassIdentifier: 
+  body: {fileID: 114416170421909208}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 114749435612732342}
+  type: CardQuestType
+--- !u!114 &114922329014686480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Item
+  m_EditorClassIdentifier: 
+  body: {fileID: 114315605778953890}
+  side: 2
+  sidePosition: 85
+  sideOffset: 0
+  connections:
+  - {fileID: 114550820155511960}
+  type: CardQuestType
