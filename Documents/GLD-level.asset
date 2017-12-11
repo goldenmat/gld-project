@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0c2324a9ab1224ebe3edad393e3544, type: 3}
+  m_Name: GLD-level
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114739871668982192}
+  - {fileID: 114792186696265884}
+--- !u!114 &114015293473301760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ab6487237ff124ea4c2aa5de9ce3fb, type: 3}
+  m_Name: MainEditorState
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 11400000}
+  parentEditor: {fileID: 0}
+  drawing: 1
+  selectedNode: {fileID: 0}
+  panOffset: {x: 59, y: 23}
+  zoom: 1
+--- !u!114 &114437351568004114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: MobCard
+  m_EditorClassIdentifier: 
+  body: {fileID: 114792186696265884}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 0}
+  type: CardQuestType
+--- !u!114 &114739871668982192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71dd3a751fde1d646bf18e050db853cd, type: 3}
+  m_Name: Mob PreEvents Card
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -66
+    y: -115
+    width: 400
+    height: 150
+  nodeKnobs:
+  - {fileID: 114853363335569834}
+  Inputs: []
+  Outputs: []
+  mon: 13
+  asp: 18
+  text: 
+  gen: 0
+--- !u!114 &114792186696265884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1e01645191449498b67bdfdd3a702d, type: 3}
+  m_Name: Mob Quest Card
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -58
+    y: 64
+    width: 400
+    height: 150
+  nodeKnobs:
+  - {fileID: 114437351568004114}
+  Inputs: []
+  Outputs: []
+  mon: 1
+  asp: 16
+  text: 
+  gen: 0
+--- !u!114 &114853363335569834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caff27366054dd44a30ddb5be369acc, type: 3}
+  m_Name: MobCard
+  m_EditorClassIdentifier: 
+  body: {fileID: 114739871668982192}
+  side: 4
+  sidePosition: 20
+  sideOffset: 0
+  connection: {fileID: 0}
+  type: CardPreEventsType

@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0c2324a9ab1224ebe3edad393e3544, type: 3}
+  m_Name: GLD-general story
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114663730144922236}
+--- !u!114 &114439238735362744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Backstory
+  m_EditorClassIdentifier: 
+  body: {fileID: 114663730144922236}
+  side: 2
+  sidePosition: 51
+  sideOffset: 0
+  connections: []
+  type: BackstoryType
+--- !u!114 &114585193007723732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: Prequel
+  m_EditorClassIdentifier: 
+  body: {fileID: 114663730144922236}
+  side: 2
+  sidePosition: 33
+  sideOffset: 0
+  connections: []
+  type: PrequelType
+--- !u!114 &114663730144922236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6502b3206db7234f97ac70042f8b35f, type: 3}
+  m_Name: Pre Events
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -213
+    y: -195
+    width: 400
+    height: 330
+  nodeKnobs:
+  - {fileID: 114585193007723732}
+  - {fileID: 114439238735362744}
+  - {fileID: 114893592320505750}
+  - {fileID: 114885175444229214}
+  Inputs: []
+  Outputs: []
+  pre: 0
+  back: 1
+  text: 
+  place: 0
+  ev: 0
+  mob: 0
+  gen: 0
+  index: 4
+--- !u!114 &114736188711062322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ab6487237ff124ea4c2aa5de9ce3fb, type: 3}
+  m_Name: MainEditorState
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 11400000}
+  parentEditor: {fileID: 0}
+  drawing: 1
+  selectedNode: {fileID: 114663730144922236}
+  panOffset: {x: 0, y: 0}
+  zoom: 1
+--- !u!114 &114885175444229214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: EventPreEventsCard
+  m_EditorClassIdentifier: 
+  body: {fileID: 114663730144922236}
+  side: 1
+  sidePosition: 160
+  sideOffset: 0
+  connections: []
+  type: CardPreEventsType
+--- !u!114 &114893592320505750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e7026d0da7df848ab67d517ac12d74, type: 3}
+  m_Name: PlacePreEventsCard
+  m_EditorClassIdentifier: 
+  body: {fileID: 114663730144922236}
+  side: 1
+  sidePosition: 60
+  sideOffset: 0
+  connections: []
+  type: CardPreEventsType
